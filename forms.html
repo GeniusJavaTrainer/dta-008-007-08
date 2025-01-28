@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+        <form>
+            <label for="rollno">Roll No.</label>
+            <input type="number" name="rollno" id="rollno" min="1" max="60" required/><br/><br/>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required/><br/><br/>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required/><br/><br/>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required/><br/><br/>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required/><br/><br/>
+
+            <label for="hobbies">Hobbies</label>
+            <input type="checkbox" name="hobbies" id="hobbies" value="Chess" required/>Chess
+            <input type="checkbox" style="margin-left: 15px;" name="hobbies" id="hobbies" value="Cricket" required/>Cricket <br/><br/>
+
+            <label for="branch">Branch</label>
+            <input type="radio" name="branch" id="branch" value="CS" required/>CS
+            <input type="radio" style="margin-left: 15px;" name="branch" id="branch" value="IT" required/>IT <br/><br/>
+
+            <label for="location">Preferred Location</label>
+            <select name="location" id="location" multiple>
+                <option value="Pune">Pune</option>
+                <option value="Gurugram">Gurugram</option>
+                <option value="Bengaluru">Bengaluru</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset" style="margin-left: 30px;"/>
+        </form>
+</body>
+</html>
